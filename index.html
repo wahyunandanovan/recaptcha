@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>reCAPTCHA</title>
+    <title>reCAPTCHA Fullscreen</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      .g-recaptcha {
+        transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+      }
+    </style>
   </head>
-  <body style="display: flex; justify-content: center; align-items: center; width: 100vw; height: 100vh">
+  <body>
     <form action="?" method="POST">
       <div
         class="g-recaptcha"
@@ -21,4 +29,5 @@
     </script>
   </body>
 </html>
+
 <!-- https://www.google.com/recaptcha/admin/create -->
